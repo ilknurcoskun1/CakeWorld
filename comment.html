@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="comment.js"defer></script>
+    <!-- <link rel="stylesheet" href="project.css"> -->
+    
+</head>
+<body>
+    <style>
+        :root{
+  --textcolor:chocolate;
+}
+h1{
+    background-color: aquamarine;
+    text-align: center;
+    /* border: solid 2px crimson; */
+    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Slackside One', cursive;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+   color:var(--textcolor);
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  background-color:cornsilk;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  
+  
+  
+  }
+  
+  
+  li a{
+  color: goldenrod ;
+  background-color: cornsilk;
+  text-decoration: none;
+  padding: 10px 18px;
+  display: inline-block;
+  font-size: 30px;
+ font-style: italic;
+ 
+  }
+  .sublist{
+    color: darkslategray;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  
+  ul li{
+  
+      float: left;}
+      
+nav{
+  
+  top: 0px;
+  position: sticky;
+  
+  }
+  .SubMenu  {
+    display: none;
+    text-align: left;
+    position: absolute;
+    width: 200px; ;
+  }
+
+  .SubMenu a{
+      display: block;
+     text-align: left;
+    }
+  
+ 
+  li a:hover {
+      cursor: pointer;
+      background-image: url(./images/vic-sponge.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: coral;
+
+  } 
+  
+
+    .sublist:hover .SubMenu{
+      display: block;
+    }
+
+        body {
+          background-color:seashell;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 5px;
+          width: 100%;
+        }
+    
+        .form-container {
+          background-color: cadetblue;
+          padding: 20px;
+        }
+    
+        .comment-list {
+          margin-top: 20px;
+        }
+    
+        .comment {
+          background-color: blanchedalmond;
+          border: 1px solid coral;
+          padding: 10px;
+          margin-bottom: 10px;
+        }
+    
+        .comment .meta {
+          font-size: 14px;
+          color: blanchedalmond;
+        }
+
+       
+      </style>
+    </head>
+    
+    <body>
+
+      <h1>Cake World</h1>
+      <nav>
+   
+       <ul>
+       <li ><a href="project.html"> Home </a> </li>
+       <li><a href="product.html"> Product </a></li>
+       <li><a href="About.html"> About US</a></li>
+       <li><a href="Order.html">Order</a></li>
+       <li><a href="comment.html">Comment</a></li>
+        <li class="sublist"><a href="#">Contact Us</a>
+           <div class="SubMenu">  
+             
+               <a href="location.html">Location</a>
+               <a href="Email.html">Email</a>
+               <a href="Phone.html">Telephone</a>
+       
+           </div>
+       
+       </li> 
+       
+       </ul>
+       
+       
+       </nav>
+      <div class="container">
+        <h1>What did you say?</h1>
+    
+        <div class="form-container">
+          <h2>Come From You</h2>
+          <form id="commentForm">
+            <div>
+              <label for="nameInput">Name:</label>
+              <input type="text" id="nameInput" required>
+            </div>
+            <div>
+              <label for="commentInput">Comment:</label>
+              <textarea id="commentInput" required></textarea>
+            </div>
+            <button type="submit">Sent</button>
+          </form>
+        </div>
+    
+        <div class="comment-list" id="commentList">
+         
+        </div>
+      </div>
+
+   
+    
+</body>
+</html>

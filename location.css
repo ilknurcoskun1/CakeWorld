@@ -1,0 +1,15 @@
+html{
+    background-image: url(./vic-sponge.jpg);background-repeat: no-repeat; background-size: cover;}
+div{ 
+    
+    z-index : -1;
+    border: solid;
+    border-color: blueviolet;
+    border: 3px;
+    
+   
+}
+nav{margin-bottom: 20px;
+z-index: 3;
+
+}

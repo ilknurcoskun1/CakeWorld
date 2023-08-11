@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="order.js"defer></script>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <nav>
+
+    <ul>
+    <li ><a href="project.html"> Home </a> </li>
+    <li><a href="product.html"> Product </a></li>
+    <li><a href="About.html"> About US</a></li>
+    <li><a href="Order.html">Order</a></li>
+    <li><a href="comment.html">Comment</a></li>
+    <li class="sublist"><a href="#">Contact Us</a>
+        <div class="SubMenu">  
+          
+            <a href="location.html">Location</a>
+            <a href="Email.html">Email</a>
+            <a href="Phone.html">Telephone</a>
+    
+        </div>
+    
+    </li> 
+    
+    </ul>
+    
+    
+    </nav>
+
+       
+  <div class="cake-container">
+    <div class="cake">
+      <img src="./images/vic-sponge.jpg" alt="sponge">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Victoria Sponge Cake</p>
+      <p class="product-price">8.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake">
+      <img src="./images/english-tea.jpg" alt="english Tea">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">English Tea</p>
+      <p class="product-price">4.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake">
+      <img src="./images/green-tea.jpg" alt="green tea">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Green Tea</p>
+      <p class="product-price">3.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake">
+      <img src="./images/espresso.jpg" alt="espresso">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Espresso</p>
+      <p class="product-price">2.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake">
+      <img src="./images/choc_fudge.webp" alt="fudge">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Chocolate Fudge Cake</p>
+      <p class="product-price">7.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake second-row">
+      <img src="./images/flat_white.jpg" alt="flat white">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Flat White Coffee</p>
+      <p class="product-price">5.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake second-row">
+      <img src="./images/cappucino.jpg" alt="capuccino">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Cappuccino</p>
+      <p class="product-price">4.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake second-row">
+      <img src="./images/americano.jpg" alt="Americcono">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Americano</p>
+      <p class="product-price">3.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+    <div class="cake second-row">
+      <img src="./images/latte.jpg" alt="latte">
+      <div class="quantity-control">
+        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+        <input type="text" class="quantity" value="0">
+        <button class="increment" onclick="incrementQuantity(this)">+</button>
+      </div>
+      <p class="product-name">Latte</p>
+      <p class="product-price">6.99</p>
+      <button class="add-to-basket" onclick="addToBasket(this)">Add to Basket</button>
+    </div>
+  </div>
+
+  <div class="basket" onclick="toggleBasket()">
+    <span class="basket-label">Basket:</span>
+    <span class="basket-count">0</span>
+  </div>
+
+  <div id="basket-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleBasket()">&times;</span>
+      <table class="basket-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="basket-items">
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+            <td id="basket-total">0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="5" style="text-align: right;">
+              <button class="basket-checkout" onclick="showCheckoutModal()">Check Out</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+  <div id="checkout-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideCheckoutModal()">&times;</span>
+      <h2>Checkout</h2>
+      <p>Please enter your information:</p>
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" required>
+      </div>
+      <div>
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea>
+      </div>
+      <button onclick="submitOrder()">Submit Order</button>
+    </div>
+  </div>
+
+  <div id="order-confirmation" class="modal">
+    <div class="modal-content">
+      <h2>Order Confirmation</h2>
+      <p>Your order has been received. Thank you!</p>
+      <button onclick="hideOrderConfirmation()">OK</button>
+    </div>
+  </div>
+</body>
+</html>

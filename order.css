@@ -1,0 +1,136 @@
+.cake-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cake {
+  margin: 10px;
+  text-align: center;
+}
+
+.cake img {
+  width: 200px;
+  height: 200px;
+}
+
+.second-row {
+  margin-top: 50px;
+}
+
+.basket {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: green;
+  color: cornsilk;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.basket-label {
+  margin-right: 10px;
+}
+
+.add-to-basket {
+  margin-left: auto;
+  border: none;
+  background-color: chocolate;
+}
+.add-to-basket:active {
+background-color: yellow !important;
+transition: background-color 1s;
+}
+
+.add-to-basket:focus {
+background-color: chocolate;
+transition: background-color 0s;
+}
+
+
+.basket-table {
+  width: 100%;
+  max-height: 300px;
+  overflow: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  margin-left: 0;
+  background-color: darkseagreen;
+}
+
+.basket-table th,
+.basket-table td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.basket-table th:first-child,
+.basket-table td:first-child {
+  border-left: none;
+}
+
+.basket-table th:last-child,
+.basket-table td:last-child {
+  border-right: none;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+
+.quantity-control input {
+  width: 30px;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color:cornsilk;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
